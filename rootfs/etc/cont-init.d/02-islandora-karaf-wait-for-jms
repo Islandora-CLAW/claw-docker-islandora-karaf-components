@@ -1,0 +1,10 @@
+#!/usr/bin/execlineb -P
+# -*- mode: sh -*-
+# vi: set ft=sh:
+with-contenv
+multisubstitute
+{
+    import -i JMS_HOST
+    import -i JMS_HOST_PORT
+}
+timeout -t 60 wait-for-open-port ${JMS_HOST} ${JMS_HOST_PORT}

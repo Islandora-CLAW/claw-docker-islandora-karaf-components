@@ -1,0 +1,17 @@
+[template]
+src = "ca.islandora.camel.sync.cfg.tmpl"
+dest = "/opt/karaf/etc/ca.islandora.camel.sync.cfg"
+prefix= "/"
+keys = [
+     "/drupal/host",
+     "/drupal/host",
+     "/drupal/host/port",
+     "/drupal/site/account/name",
+     "/drupal/site/account/password",
+     "/fedora/host",
+     "/fedora/host/port",
+     "/jms/host",
+     "/jms/host/port",
+     "/triplestore/host",
+     "/triplestore/host/port"
+]

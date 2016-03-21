@@ -1,0 +1,10 @@
+#!/usr/bin/execlineb -P
+# -*- mode: sh -*-
+# vi: set ft=sh:
+with-contenv
+multisubstitute
+{
+    import -i DRUPAL_HOST
+    import -i DRUPAL_HOST_PORT
+}
+timeout -t 60 wait-for-open-port ${DRUPAL_HOST} ${DRUPAL_HOST_PORT}

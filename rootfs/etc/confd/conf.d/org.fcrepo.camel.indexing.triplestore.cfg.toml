@@ -1,0 +1,12 @@
+[template]
+src = "org.fcrepo.camel.indexing.triplestore.cfg.tmpl"
+dest = "/opt/karaf/etc/org.fcrepo.camel.indexing.triplestore.cfg"
+prefix= "/"
+keys = [
+     "/fedora/host",
+     "/fedora/host/port",
+     "/jms/host",
+     "/jms/host/port",
+     "/triplestore/host",
+     "/triplestore/host/port"
+]

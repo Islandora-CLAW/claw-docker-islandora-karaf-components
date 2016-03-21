@@ -1,0 +1,10 @@
+#!/usr/bin/execlineb -P
+# -*- mode: sh -*-
+# vi: set ft=sh:
+with-contenv
+multisubstitute
+{
+    import -i FEDORA_HOST
+    import -i FEDORA_HOST_PORT
+}
+timeout -t 60 wait-for-open-port ${FEDORA_HOST} ${FEDORA_HOST_PORT}

@@ -1,0 +1,10 @@
+[template]
+src = "ca.islandora.camel.indexing.triplestore.cfg.tmpl"
+dest = "/opt/karaf/etc/ca.islandora.camel.indexing.triplestore.cfg"
+prefix= "/"
+keys = [
+     "/jms/host",
+     "/jms/host/port",
+     "/triplestore/host",
+     "/triplestore/host/port"
+]

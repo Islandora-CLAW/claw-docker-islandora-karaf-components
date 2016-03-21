@@ -1,0 +1,17 @@
+[template]
+src = "ca.islandora.services.basic.image.cfg.tmpl"
+dest = "/opt/karaf/etc/ca.islandora.services.basic.image.cfg"
+prefix= "/"
+keys = [
+     "/drupal/host",
+     "/drupal/host",
+     "/drupal/host/port",
+     "/drupal/site/account/name",
+     "/drupal/site/account/password",
+     "/fedora/host",
+     "/fedora/host/port",
+     "/jms/host",
+     "/jms/host/port",
+     "/triplestore/host",
+     "/triplestore/host/port"
+]

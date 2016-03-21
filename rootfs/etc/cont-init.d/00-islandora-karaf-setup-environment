@@ -1,0 +1,41 @@
+#!/usr/bin/execlineb -P
+# -*- mode: sh -*-
+# vi: set ft=sh:
+# Check to see if required enviroment variables were provided, and set defaults.
+with-contenv
+# Currently no support for multi-sites or sites with non-empty base url.
+# or authentication against Fedora.
+multisubstitute
+{
+  import -D "drupal" DRUPAL_HOST
+  import -D "80" DRUPAL_HOST_PORT
+  import -D "admin" DRUPAL_SITE_ACCOUNT_NAME
+  import -i DRUPAL_SITE_ACCOUNT_PASSWORD
+  import -D "fedora" FEDORA_HOST
+  import -D "8080" FEDORA_HOST_PORT
+  import -D "fedora" JMS_HOST
+  import -D "61616" JMS_HOST_PORT
+  import -D "blazegraph" TRIPLESTORE_HOST
+  import -D "8080" TRIPLESTORE_HOST_PORT
+  #import -D "http://fedora:8080/fcrepo/rest" FEDORA_BASE_URL
+  #import -D "tcp://fedora:61616" JMS_BROKER_URL
+  #import -D "http://blazegraph:8080/bigdata/namespace/kb/sparql" TRIPLESTORE_BASE_URL
+}
+foreground {
+  # We add / update the environment defined for the container,
+  # this allows our other initialization and service scripts
+  # use these settings; but does not change the existing
+  # enviroment as seen by linked containers.
+  s6-env -i
+  DRUPAL_HOST=$DRUPAL_HOST
+  DRUPAL_HOST_PORT=$DRUPAL_HOST_PORT
+  DRUPAL_SITE_ACCOUNT_NAME=$DRUPAL_SITE_ACCOUNT_NAME
+  DRUPAL_SITE_ACCOUNT_PASSWORD=$DRUPAL_SITE_ACCOUNT_PASSWORD
+  FEDORA_HOST=$FEDORA_HOST
+  FEDORA_HOST_PORT=$FEDORA_HOST_PORT
+  JMS_HOST=$JMS_HOST
+  JMS_HOST_PORT=$JMS_HOST_PORT
+  TRIPLESTORE_HOST=$TRIPLESTORE_HOST
+  TRIPLESTORE_HOST_PORT=$TRIPLESTORE_HOST_PORT
+  s6-dumpenv -- /var/run/s6/container_environment
+}

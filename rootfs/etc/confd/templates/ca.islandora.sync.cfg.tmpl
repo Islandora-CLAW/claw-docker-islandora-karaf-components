@@ -1,0 +1,8 @@
+islandora.drupal.baseurl = {{ getv "/drupal/host" }}:{{ getv "/drupal/host/port" }}/islandora
+islandora.drupal.username = {{ getv "/drupal/site/account/name" }}
+islandora.drupal.password = {{ getv "/drupal/site/account/password" }}
+islandora.fcrepo.baseurl = {{ getv "/fedora/host" }}:{{ getv "/fedora/host/port" }}/fcrepo/rest
+islandora.php.workingDir = /opt/claw/camel/commands/bin
+islandora.php.executable = islandora.php
+islandora.triplestore.baseurl = {{ getv "/triplestore/host" }}:{{ getv "/triplestore/host/port"}}/bigdata/namespace/kb/sparql
+islandora.brokerUrl = tcp://{{ getv "/jms/host" }}:{{ getv "/jms/host/port" }}
