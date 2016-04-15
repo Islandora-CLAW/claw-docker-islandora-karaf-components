@@ -1,7 +1,7 @@
 FROM islandora-claw/karaf
 MAINTAINER Nigel Banks <nigel.g.banks@gmail.com>
 
-LABEL "License"="GPLv3" \
+LABEL "License"="MIT" \
       "Version"="0.0.1"
 
 RUN apk-install git php-phar php-ctype php-json php-curl php-xml php-posix php-openssl && \
