@@ -1,4 +1,4 @@
-FROM islandora-claw/karaf
+FROM islandora/claw-karaf
 MAINTAINER Nigel Banks <nigel.g.banks@gmail.com>
 
 LABEL "License"="MIT" \
