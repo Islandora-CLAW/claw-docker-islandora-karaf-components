@@ -1,9 +1,9 @@
 # Islandora CLAW: Islandora Karaf Components Docker Image
 
-[![Docker Stars](https://img.shields.io/docker/stars/islandora-claw/islandora-karaf-compontents.svg)](https://hub.docker.com/r/islandora-claw/islandora-karaf-compontents/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/islandora-claw/islandora-karaf-compontents.svg)](https://hub.docker.com/r/islandora-claw/islandora-karaf-compontents/)
-[![Image Size](https://img.shields.io/imagelayers/image-size/islandora-claw/islandora-karaf-compontents/latest.svg)](https://imagelayers.io/?images=islandora-claw/islandora-karaf-components:latest)
-[![Image Layers](https://img.shields.io/imagelayers/layers/islandora-claw/islandora-karaf-compontents/latest.svg)](https://imagelayers.io/?images=islandora-claw/islandora-karaf-components:latest)
+[![Docker Stars](https://img.shields.io/docker/stars/islandora/claw-islandora-karaf-compontents.svg)](https://hub.docker.com/r/islandora/claw-islandora-karaf-compontents/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/islandora/claw-islandora-karaf-compontents.svg)](https://hub.docker.com/r/islandora/claw-islandora-karaf-compontents/)
+[![Image Size](https://img.shields.io/imagelayers/image-size/islandora/claw-islandora-karaf-compontents/latest.svg)](https://imagelayers.io/?images=islandora/claw-islandora-karaf-components:latest)
+[![Image Layers](https://img.shields.io/imagelayers/layers/islandora/claw-islandora-karaf-compontents/latest.svg)](https://imagelayers.io/?images=islandora/claw-islandora-karaf-components:latest)
 
 ### Introduction
 
@@ -31,7 +31,7 @@ Please consult the
 
 **Example (foreground, port 8181, auto-remove):**
 ```bash
-docker run --rm -ti -p 8181:8181 islandora-claw/karaf
+docker run --rm -ti -p 8181:8181 islandora/claw-karaf
 ```
 
 ### Commands
