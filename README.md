@@ -39,10 +39,6 @@ For convenience a number of commands are provided in the [commands](/commands) f
 |---------|-----------|----------|---------------------------------------------|
 | build   |           |          | Build this image with the default settings. |
 
-## Notes
-
-Eventually we will support running on either OpenJDK or Oracle JDK, but for the moment it only supports Open JDK.
-
 ## Maintainers/Sponsors
 
 * UPEI
