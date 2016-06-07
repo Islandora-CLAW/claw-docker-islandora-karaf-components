@@ -2,6 +2,8 @@
 
 [![Docker Stars](https://img.shields.io/docker/stars/islandora/claw-islandora-karaf-compontents.svg)](https://hub.docker.com/r/islandora/claw-islandora-karaf-compontents/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/islandora/claw-islandora-karaf-compontents.svg)](https://hub.docker.com/r/islandora/claw-islandora-karaf-compontents/)
+[![Contribution Guidelines](http://img.shields.io/badge/CONTRIBUTING-Guidelines-blue.svg)](./CONTRIBUTING.md)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](./LICENSE)
 
 ## Introduction
 
